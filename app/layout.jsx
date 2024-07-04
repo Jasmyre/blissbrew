@@ -6,8 +6,6 @@ import Header from "@/components/header/Header";
 import "./globals.css";
 import './css/all.css'
 
-const inter = Inter({ subsets: ["latin"]});
-
 export const metadata = {
 	title: "BlissBrew",
 	description:
@@ -16,8 +14,8 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
   return (
-		<html lang="en" className={inter.className}>
-			<body className={inter.className} id="home">
+		<html lang="en">
+			<body id="home">
 				<Header navigations={["about", "menu", "contact"]}/>
 				{children}
 				<SpeedInsights />

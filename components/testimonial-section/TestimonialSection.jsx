@@ -5,8 +5,7 @@ import styles from "./TestimonialSection.module.css";
 
 import Feedback from "../feedback/Feedback";
 
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+
 
 const TestimonialSection = (props) => {
 	return (
@@ -28,7 +27,7 @@ const TestimonialSection = (props) => {
 					</div>
 
 					<div
-						className={`${styles.testimonial_column} ${inter.className}`}
+						className={styles.testimonial_column}
 					>
 						<Feedback testimonial="BlissBrew's pastries are to die for! I can't get enough of their freshly baked croissants and muffins. Pair that with a classic espresso, and it's the perfect start to my day. Highly recommend this place!">
 							Jessica M.
