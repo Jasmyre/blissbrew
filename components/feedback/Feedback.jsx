@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Image from 'next/image'
+import React from "react";
+import PropTypes from "prop-types";
+import Image from "next/image";
 
-import styles from './Feedback.module.css'
+import styles from "./Feedback.module.css";
 
 const Feedback = (props) => {
-  return (
+	return (
 		<div className={styles.feedback_wrapper}>
 			<div className={styles.star_wrapper}>
 				<Image
@@ -44,7 +44,9 @@ const Feedback = (props) => {
 					priority
 				/>
 			</div>
-			<div className={styles.text_wrapper}>"{props.testimonial}"</div>
+			<div className={styles.text_wrapper}>
+				<p>"{props.testimonial}"</p>
+			</div>
 			<div className={styles.client_info_wrapper}>
 				<div className={styles.avatar_wrapper}>
 					<Image
@@ -55,15 +57,15 @@ const Feedback = (props) => {
 						priority
 					/>
 				</div>
-				<p>{props.children}</p>
+				{props.children}
 			</div>
 		</div>
-  );
-}
+	);
+};
 
 Feedback.PropTypes = {
-    children: PropTypes.children,
-    testimonial: PropTypes.string.isRequired
-}
+	children: PropTypes.children,
+	testimonial: PropTypes.string.isRequired,
+};
 
-export default Feedback
+export default Feedback;

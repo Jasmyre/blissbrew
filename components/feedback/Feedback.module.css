@@ -1,76 +1,73 @@
 .feedback_wrapper {
-    height: max-content;
-    width: 100%;
-    padding: 32px 24px;
-    border: solid 2px var(--theme-3);
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+	height: max-content;
+	width: 100%;
+	padding: 32px 24px;
+	border: solid 2px var(--theme-3);
+	box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
 
-    @media only screen and (max-width: 600px) {
-        width: 325px;
-    }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+
+	@media only screen and (max-width: 600px) {
+		width: 325px;
+	}
 }
 
 .feedback_wrapper .star_wrapper {
-    height: max-content;
-    width: 100%;
+	height: max-content;
+	width: 100%;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .feedback_wrapper .text_wrapper {
-    height: max-content;
-    width: 100%;
+	height: max-content;
+	width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
 
-    font-size: 20px;
-    font-weight: 100;
+	font-size: 20px;
+	font-weight: 100;
 
-    @media only screen and (max-width: 900px) {
-        font-size: 20px;
-        font-weight: 300;
-        
-    }
+	@media only screen and (max-width: 900px) {
+		font-size: 20px;
+		font-weight: 300;
+	}
 }
 
 .feedback_wrapper .client_info_wrapper {
-    height: max-content;
-    width: 100%;
+	height: max-content;
+	width: 100%;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 12px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 12px;
 
-    font-size: 20px;
-    font-weight: 600;
-
-  
+	font-size: 20px;
+	font-weight: 600;
 }
 
 .client_info_wrapper .avatar_wrapper {
     width: max-content;
-    height: max-content;
-    padding: 4px 4px;
-    border-radius: 100%;
-    background: var(--theme-2);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	height: max-content;
+	padding: 4px 4px;
+	border-radius: 100%;
+	background: var(--theme-2);
+    
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }

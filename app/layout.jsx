@@ -1,10 +1,12 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-import { Inter } from "next/font/google";
-import Header from "@/components/header/Header";
-
 import "./globals.css";
 import './css/all.css'
+
+import Header from "@/components/header/Header";
+
+import { Inter } from "next/font/google";
+const inter = Inter({subsets: ["latin"], weight: ["300"]})
 
 export const metadata = {
 	title: "BlissBrew",
@@ -15,7 +17,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
 		<html lang="en">
-			<body id="home">
+			<body id="home" className={inter.className}>
 				<Header navigations={["about", "menu", "contact"]}/>
 				{children}
 				<SpeedInsights />
