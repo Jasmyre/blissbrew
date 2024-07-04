@@ -6,7 +6,7 @@ import Header from "@/components/header/Header";
 import "./globals.css";
 import './css/all.css'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], weight: 400 });
 
 export const metadata = {
 	title: "BlissBrew",
