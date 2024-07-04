@@ -1,7 +1,10 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/header/Header";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+
+import { Inter } from "next/font/google";
+import Header from "@/components/header/Header";
+
+import "./globals.css";
+import './css/all.css'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,10 +17,8 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
 		<html lang="en">
-			<body className={inter.className}>
-				<Header navigations={["about", "menu", "contact", "shop"]}>
-					BlissBrew
-				</Header>
+			<body className={inter.className} id="home">
+				<Header navigations={["about", "menu", "contact"]}/>
 				{children}
 				<SpeedInsights />
 			</body>

@@ -1,0 +1,127 @@
+.contact_section {
+    height: max-content;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact_section .contact_wrapper {
+    padding: 80px 40px;
+    height: max-content;
+    width: 100%;
+    max-width: var(--max-width);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media only screen and (max-width: 800px) {
+        flex-direction: column;
+        gap: 32px;
+        
+    }
+
+}
+
+.contact_wrapper .contact_info_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.contact_info_wrapper h1 {
+    margin: 0;
+    font-size: 56px;
+}
+
+.contact_info_wrapper p {
+    margin: 16px 0px;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact_wrapper .form {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 24px;
+
+    @media only screen and (max-width: 800px) {
+        align-items: flex-start;
+        
+    }
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.form div  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.form div div label {
+    font-size: 20px;
+}
+
+.form div div input,
+.form div div textarea {
+    width: 560px;
+    padding: 12px 12px;
+    font-size: 20px;
+    font-weight: 100;
+    border: none;
+    background: var(--theme-1);
+    border: solid 1px var(--theme-5);
+    border-radius: 4px;
+
+    @media only screen and (max-width: 1100px) {
+        width: 450px;
+    }
+
+    @media only screen and (max-width: 900px) {
+        width: 325px;
+    }
+
+    @media only screen and (max-width: 800px) {
+        width: 500px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 325px;
+    }
+}
+
+.form div div input:active,
+.form div div input:hover,
+.form div div input:focus,
+.form div div textarea:active,
+.form div div textarea:hover,
+.form div div textarea:focus {
+    outline: none;
+}
+
+.form div div textarea {
+    height: 200px;
+}

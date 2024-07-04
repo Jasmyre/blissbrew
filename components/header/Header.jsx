@@ -1,9 +1,10 @@
 import React from "react";
-import Image from "next/image";
 import styles from "./Header.module.css";
+import Image from "next/image";
 
 import PropTypes from "prop-types";
 import Button from "../button/Button";
+import Logo from "../logo/Logo";
 
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
@@ -36,7 +37,7 @@ const Header = (props) => {
 							height={30}
 							priority
 						/>
-						<p>{props.children}</p>
+						<p>BlissBrew</p>
 					</a>
 				</div>
 				<nav className={styles.nav}>
@@ -56,7 +57,7 @@ const Header = (props) => {
 					<ul>
 						<li>
 							<a
-								href="/"
+								href="#home"
 								className={styles.a}
 							>
 								<span>Home</span>
@@ -64,7 +65,7 @@ const Header = (props) => {
 						</li>
 						{navigations}
 						<li>
-							<Button href="#about">Order Online</Button>
+							<Button href="/">Order Online</Button>
 						</li>
 					</ul>
 				</nav>

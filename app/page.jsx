@@ -1,6 +1,9 @@
 import HeroSection from "@/components/hero-section/HeroSection";
 import AboutSection from "@/components/about-section/AboutSection";
+import FooterSection from "@/components/footer-section/FooterSection";
 import ProductSection from "@/components/product-section/ProductSection";
+import ContactSection from "@/components/contact-section/ContactSection";
+import TestimonialSection from "@/components/testimonial-section/TestimonialSection";
 
 const Home = () => {
 	return (
@@ -67,6 +70,9 @@ const Home = () => {
 					},
 				]}
 			/>
+			<TestimonialSection>Customers Feedback</TestimonialSection>
+			<ContactSection>Contact Us</ContactSection>
+			<FooterSection />
 		</main>
 	);
 };
