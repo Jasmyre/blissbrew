@@ -46,11 +46,17 @@ const Feedback = (props) => {
 			</div>
 			<div className={styles.text_wrapper}>"{props.testimonial}"</div>
 			<div className={styles.client_info_wrapper}>
-                <div className={styles.avatar_wrapper}>
-                    <Image src="/avatar.svg" alt="avatar" width={32} height={32} priority/>
-                </div>
-                {props.children}
-            </div>
+				<div className={styles.avatar_wrapper}>
+					<Image
+						src="/avatar.svg"
+						alt="avatar"
+						width={32}
+						height={32}
+						priority
+					/>
+				</div>
+				<p>{props.children}</p>
+			</div>
 		</div>
   );
 }
