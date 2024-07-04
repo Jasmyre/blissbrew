@@ -14,8 +14,11 @@ const RootLayout = ({ children }) => {
   return (
 		<html lang="en">
 			<body className={inter.className}>
-				<Header navigations={["about", "menu", "contact", "shop"]}>BlissBrew</Header>
+				<Header navigations={["about", "menu", "contact", "shop"]}>
+					BlissBrew
+				</Header>
 				{children}
+				<SpeedInsights />
 			</body>
 		</html>
   );
