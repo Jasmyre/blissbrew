@@ -1,12 +1,40 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import Image from "next/image";
+import { gsap } from "gsap/all";
 
 import styles from "./Feedback.module.css";
 
 const Feedback = (props) => {
+	const ref = useRef(null);
+
+	useEffect(() => {
+		const element = ref.current;
+
+		const handleCursurEnter = () => {
+			gsap.to(element, { scale: 1.050, duration: 0.3, zIndex: 2, stagger: 1 });
+		}
+
+		const handleCursurExit = () => {
+			gsap.to(element, { scale: 1, duration: 0.3, zIndex: 1, stagger: 1 });
+		}
+
+		element.addEventListener("mouseenter", handleCursurEnter)
+		element.addEventListener("mouseleave", handleCursurExit)
+
+		return () => {
+			element.removeEventListener("mouseenter", handleCursurEnter);
+			element.removeEventListener("mouseleave", handleCursurExit);
+		}
+	}, []);
+
 	return (
-		<div className={styles.feedback_wrapper}>
+		<div
+			className={styles.feedback_wrapper}
+			ref={ref}
+		>
 			<div className={styles.star_wrapper}>
 				<Image
 					src="/star.svg"

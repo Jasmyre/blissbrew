@@ -5,8 +5,6 @@ import styles from "./TestimonialSection.module.css";
 
 import Feedback from "../feedback/Feedback";
 
-
-
 const TestimonialSection = (props) => {
 	return (
 		<div className={styles.testimonial_section}>
@@ -26,9 +24,7 @@ const TestimonialSection = (props) => {
 						</Feedback>
 					</div>
 
-					<div
-						className={styles.testimonial_column}
-					>
+					<div className={styles.testimonial_column}>
 						<Feedback testimonial="BlissBrew's pastries are to die for! I can't get enough of their freshly baked croissants and muffins. Pair that with a classic espresso, and it's the perfect start to my day. Highly recommend this place!">
 							Jessica M.
 						</Feedback>
@@ -41,7 +37,7 @@ const TestimonialSection = (props) => {
 						<Feedback testimonial="I love coming to BlissBrew to work on my projects. The free Wi-Fi and comfortable seating make it the perfect place to be productive. Plus, their cold brew is absolutely fantastic-smooth and refreshing!">
 							Mark R.
 						</Feedback>
-						<Feedback testimonial="The ambiance at BlissBrew is just perfect for unwinding after a long day. I especially enjoy their monthly events like open mic nights. It's a great way to meet new people and enjoy some great coffee.">
+						<Feedback testimonial="BlissBrew offers a wonderful selection of organic and locally sourced products. I appreciate their commitment to quality and sustainability. Their caramel macchiato is my absolute favorite!">
 							Emely S.
 						</Feedback>
 					</div>
