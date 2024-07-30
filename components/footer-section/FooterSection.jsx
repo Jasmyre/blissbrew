@@ -26,7 +26,7 @@ const FooterSection = () => {
 				</div>
 			</div>
 			<div className={styles.lower_wrapper}>
-				<p>&copy; 2024 BlisBrew. All Rights Reserved.</p>
+				<p>&copy; 2024 BlisBrew. All Rights Reserved. Designed By Jasmyre.</p>
 			</div>
 		</div>
   );
