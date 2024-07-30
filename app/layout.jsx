@@ -1,4 +1,5 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
 import './css/all.css'
@@ -17,10 +18,14 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
 		<html lang="en">
-			<body id="home" className={inter.className}>
-				<Header navigations={["about", "menu", "contact"]}/>
+			<body
+				id="home"
+				className={inter.className}
+			>
+				<Header navigations={["about", "menu", "contact"]} />
 				{children}
 				<SpeedInsights />
+				<Analytics />
 			</body>
 		</html>
   );
