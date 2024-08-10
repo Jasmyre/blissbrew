@@ -1,1 +1,9 @@
-## Live preview: [Click Me!](https://blissbrew.vercel.app)
+# BlissBrew
+
+- Live Preview: https://blissbrew.vercel.app
+
+- ## Terminal:
+```
+npm install
+npm run dev
+```
