@@ -17,16 +17,16 @@ const ContactSection = (props) => {
 						{props.children}
 					</h1>
 					<p>
-						<i class="fa-solid fa-envelope"></i>
-						blissbrew@gmail.com
+						<i className="fa-solid fa-envelope"></i>
+						<span>blissbrew@gmail.com</span>
 					</p>
 					<p>
-						<i class="fa-solid fa-phone"></i>
-						+1 (555) 123-4567
+						<i className="fa-solid fa-phone"></i>
+						<span>+1 (555) 123-4567</span>
 					</p>
 					<p>
-						<i class="fa-solid fa-location-dot"></i>
-						123 Sample St, Anytown, USA
+						<i className="fa-solid fa-location-dot"></i>
+						<span>123 Sample St, Anytown, USA</span>
 					</p>
 				</div>
 				<form
@@ -36,7 +36,6 @@ const ContactSection = (props) => {
 					<div className={styles.form_wrapper}>
 						<div className={styles.form_name}>
 							<label htmlFor="name-input">Name:</label>
-							{/* <br /> */}
 							<input
 								type="text"
 								id="name-input"
@@ -46,7 +45,6 @@ const ContactSection = (props) => {
 						</div>
 						<div className={styles.form_email}>
 							<label htmlFor="email-input">Email:</label>
-							{/* <br /> */}
 							<input
 								type="email"
 								id="email-input"
@@ -56,7 +54,6 @@ const ContactSection = (props) => {
 						</div>
 						<div className={styles.form_message}>
 							<label htmlFor="message">Message:</label>
-							{/* <br /> */}
 							<textarea
 								id="message"
 								name="message"

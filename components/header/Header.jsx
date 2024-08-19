@@ -4,12 +4,8 @@ import Image from "next/image";
 
 import PropTypes from "prop-types";
 import Button from "../button/Button";
-import Logo from "../logo/Logo";
 
 import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
-
-let isHamburgerClicked = false;
 
 const Header = (props) => {
 	const navigations = props.navigations.map((nav) => {

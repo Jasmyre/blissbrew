@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.css">
+	</head>
+	<body>
+
+		<!-- Header -->
+		<div class="header_container">
+			<header class="header">
+				<div class="logo">
+					<a href="/">
+						<img
+							src="./logo.svg"
+							alt="Logo"
+							width="30"
+							height="30"
+							priority
+						/>
+						<p>BlissBrew</p>
+					</a>
+				</div>
+				<nav class="nav">
+					<input
+						type="checkbox"
+						id="burger"
+						name="burger"
+					/>
+					<label
+						class="burger"
+						for="burger"
+					>
+						<span></span>
+						<span></span>
+						<span></span>
+					</label>
+					<ul>
+						<li>
+							<a
+								href="#home"
+								class="a"
+							>
+								<span>Home</span>
+							</a>
+						</li>
+						<li>
+							<a
+								href="#about"
+								class="a"
+							>
+								<span>About</span>
+							</a>
+						</li>
+						<li>
+							<a
+								href="#menu"
+								class="a"
+							>
+								<span>menu</span>
+							</a>
+						</li>
+						<li>
+							<a
+								href="#contact"
+								class="a"
+							>
+								<span>contact</span>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="/"
+								class="button"
+							>
+								Order Online
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+
+		<!-- Main -->
+		<main>
+
+			<!-- Hero Section -->
+			<section class="hero_section">
+				<div class="hero_wrapper">
+					<h1 class="averia-serif-libre-bold">
+						Every Sip is a Moment of Bliss
+					</h1>
+					<p class="cinzel">
+						A cozy coffee shop in downtown where you can enjoy
+						high-quality beverages and snacks in a relaxing
+						environment.
+					</p>
+				</div>
+			</section>
+
+			<!-- About Section -->
+			<section
+				class="about_section"
+				id="about"
+			>
+				<div class="about_wrapper">
+					<div class="content_wrapper">
+						<div class="content_text_wrapper">
+							<h1 class="averia-serif-libre-bold">
+								Welcome to BlissBrew
+							</h1>
+							<p class="averia-serif-libre-regular">
+								BlissBrew is a cozy and welcoming coffee shop
+								located in the heart of downtown. We offer a
+								wide variety of coffee blends, teas, and freshly
+								baked pastries, creating a relaxing environment
+								for coffee enthusiasts, students, and remote
+								workers to enjoy high-quality beverages and
+								snacks.
+							</p>
+						</div>
+						<div class="content_button_wrapper">
+							<a
+								href="#about"
+								class="button"
+							>
+								Learn More
+							</a>
+						</div>
+					</div>
+					<div class="image_wrapper">
+						<img
+							src="./asset/about_image.png"
+							alt="about"
+							width="375"
+							height="375"
+							priority
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- Menu -->
+			<div
+				class="product_section"
+				id="menu"
+			>
+				<div class="product_wrapper">
+					<div class="product_header">
+						<h3>Products</h3>
+						<button class="button">Learn More</button>
+					</div>
+					<div class="product_list">
+						<!-- Classic Espresso -->
+						<div class="product_card">
+							<div class="product_img">
+								<img
+									src="./asset/classic_espresso.png"
+									alt="Classic Espresso"
+									width="150"
+									height="150"
+								/>
+							</div>
+							<div class="product_info">
+								<div class="card_name">
+									<h3 class="averia-serif-libre-bold">
+										Classic Espresso
+									</h3>
+									<p>
+										A rich and intense shot of espresso with
+										a velvety crema on top, perfect for a
+										quick caffeine boost.
+									</p>
+								</div>
+								<div class="card_btn">
+									<p>$2.5</p>
+									<a
+										href="#menu"
+										class="add_to_cart_button"
+									>
+										Add to Cart
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Cappuccino -->
+						<div class="product_card">
+							<div class="product_img">
+								<img
+									src="./asset/cappuccino.png"
+									alt="Cappuccino"
+									width="150"
+									height="150"
+								/>
+							</div>
+							<div class="product_info">
+								<div class="card_name">
+									<h3 class="averia-serif-libre-bold">
+										Cappuccino
+									</h3>
+									<p>
+										A creamy blend of espresso, steamed
+										milk, and milk foam, topped with a
+										sprinkle of cocoa powder.
+									</p>
+								</div>
+								<div class="card_btn">
+									<p>$3.5</p>
+									<a
+										href="#menu"
+										class="add_to_cart_button"
+									>
+										Add to Cart
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Vanilla Latte -->
+						<div class="product_card">
+							<div class="product_img">
+								<img
+									src="./asset/vanilla_latte.png"
+									alt="Vanilla Latte"
+									width="150"
+									height="150"
+								/>
+							</div>
+							<div class="product_info">
+								<div class="card_name">
+									<h3 class="averia-serif-libre-bold">
+										Vanilla Latte
+									</h3>
+									<p>
+										A smooth latte with a hint of vanilla
+										syrup, combining the perfect balance of
+										espresso and steamed milk.
+									</p>
+								</div>
+								<div class="card_btn">
+									<p>$4.0</p>
+									<a
+										href="#menu"
+										class="add_to_cart_button"
+									>
+										Add to Cart
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Mocha -->
+						<div class="product_card">
+							<div class="product_img">
+								<img
+									src="./asset/mocha.png"
+									alt="Mocha"
+									width="150"
+									height="150"
+								/>
+							</div>
+							<div class="product_info">
+								<div class="card_name">
+									<h3 class="averia-serif-libre-bold">
+										Mocha
+									</h3>
+									<p>
+										A delicious mix of espresso, steamed
+										milk, and rich chocolate syrup, topped
+										with whipped cream.
+									</p>
+								</div>
+								<div class="card_btn">
+									<p>$4.5</p>
+									<a
+										href="#menu"
+										class="add_to_cart_button"
+									>
+										Add to Cart
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Caramel Macchiato -->
+						<div class="product_card">
+							<div class="product_img">
+								<img
+									src="./asset/caramel_macchiato.png"
+									alt="Caramel Macchiato"
+									width="150"
+									height="150"
+								/>
+							</div>
+							<div class="product_info">
+								<div class="card_name">
+									<h3 class="averia-serif-libre-bold">
+										Caramel Macchiato
+									</h3>
+									<p>
+										Layers of espresso, steamed milk, and
+										caramel syrup, finished with a caramel
+										drizzle.
+									</p>
+								</div>
+								<div class="card_btn">
+									<p>$4.25</p>
+									<a
+										href="#menu"
+										class="add_to_cart_button"
+									>
+										Add to Cart
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Cold Brew -->
+						<div class="product_card">
+							<div class="product_img">
+								<img
+									src="./asset/cold_brew.png"
+									alt="Cold Brew"
+									width="150"
+									height="150"
+								/>
+							</div>
+							<div class="product_info">
+								<div class="card_name">
+									<h3 class="averia-serif-libre-bold">
+										Cold Brew
+									</h3>
+									<p>
+										A refreshing cold brew coffee steeped
+										for 12-24 hours, offering a smooth and
+										rich flavor with less acidity.
+									</p>
+								</div>
+								<div class="card_btn">
+									<p>$3.75</p>
+									<a
+										href="#menu"
+										class="add_to_cart_button"
+									>
+										Add to Cart
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Pumpkin Spice Latte -->
+						<div class="product_card">
+							<div class="product_img">
+								<img
+									src="./asset/pumkpkin_spice_latte.png"
+									alt="Pumpkin Spice Latte"
+									width="150"
+									height="150"
+								/>
+							</div>
+							<div class="product_info">
+								<div class="card_name">
+									<h3 class="averia-serif-libre-bold">
+										Pumpkin Spice Latte
+									</h3>
+									<p>
+										A seasonal favorite with espresso,
+										steamed milk, and pumpkin spice syrup,
+										topped with whipped cream and cinnamon.
+									</p>
+								</div>
+								<div class="card_btn">
+									<p>$3.75</p>
+									<a
+										href="#menu"
+										class="add_to_cart_button"
+									>
+										Add to Cart
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Affogato -->
+						<div class="product_card">
+							<div class="product_img">
+								<img
+									src="./asset/affogato.png"
+									alt="Affogato"
+									width="150"
+									height="150"
+								/>
+							</div>
+							<div class="product_info">
+								<div class="card_name">
+									<h3 class="averia-serif-libre-bold">
+										Affogato
+									</h3>
+									<p>
+										A delightful treat featuring a hot shot
+										of espresso poured over a scoop of
+										vanilla ice cream.
+									</p>
+								</div>
+								<div class="card_btn">
+									<p>$4.0</p>
+									<a
+										href="#menu"
+										class="add_to_cart_button"
+									>
+										Add to Cart
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Testimonial Section -->
+			<div class="testimonial_section">
+				<div class="testimonial_wrapper">
+					<div class="testimonial_header">
+						<h1 class="averia-serif-libre-bold">
+							Customers Feedback
+						</h1>
+					</div>
+					<div class="testimonial_content">
+
+						<div class="testimonial_column">
+                            <div class="feedback_wrapper">
+								<div class="star_wrapper">
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+								</div>
+								<div class="text_wrapper">
+									<p>
+										"BlissBrew's pastries are to die for! I can't get enough of their freshly baked croissants and muffins. Pair that with a classic espresso, and it's the perfect start to my day. Highly recommend this place!"
+									</p>
+								</div>
+								<div class="client_info_wrapper">
+									<div class="avatar_wrapper">
+										<img
+											src="./asset/avatar.svg"
+											alt="avatar"
+											width="32"
+											height="32"
+											priority
+										/>
+									</div>
+									Jessica M.
+								</div>
+							</div>
+                            <div class="feedback_wrapper">
+								<div class="star_wrapper">
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+								</div>
+								<div class="text_wrapper">
+									<p>
+										"Every visit to BlissBrew is a delight. The staff is incredibly attentive, and the coffee is consistently top-notch. I recently tried their pumpkin spice latte, and it exceeded all my expectations. This place is a gem!"
+									</p>
+								</div>
+								<div class="client_info_wrapper">
+									<div class="avatar_wrapper">
+										<img
+											src="./asset/avatar.svg"
+											alt="avatar"
+											width="32"
+											height="32"
+											priority
+										/>
+									</div>
+									James T.
+								</div>
+							</div>
+						</div>
+
+                        <div class="testimonial_column">
+							<div class="feedback_wrapper">
+								<div class="star_wrapper">
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+								</div>
+								<div class="text_wrapper">
+									<p>
+										"BlissBrew is my go-to spot for a
+										morning pick-me-up! The atmosphere is
+										cozy and inviting, and their vanilla
+										latte is the best I've ever had. The
+										staff is always friendly and makes me
+										feel right at home."
+									</p>
+								</div>
+								<div class="client_info_wrapper">
+									<div class="avatar_wrapper">
+										<img
+											src="./asset/avatar.svg"
+											alt="avatar"
+											width="32"
+											height="32"
+											priority
+										/>
+									</div>
+									Sarah L.
+								</div>
+							</div>
+                            <div class="feedback_wrapper">
+								<div class="star_wrapper">
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+								</div>
+								<div class="text_wrapper">
+									<p>
+										"The ambiance at BlissBrew is just perfect for unwinding after a long day. I especially enjoy their monthly events like open mic nights. It's a great way to meet new people and enjoy some great coffee."
+									</p>
+								</div>
+								<div class="client_info_wrapper">
+									<div class="avatar_wrapper">
+										<img
+											src="./asset/avatar.svg"
+											alt="avatar"
+											width="32"
+											height="32"
+											priority
+										/>
+									</div>
+									David K.
+								</div>
+							</div>
+						</div>
+
+						<div class="testimonial_column">
+                            <div class="feedback_wrapper">
+								<div class="star_wrapper">
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+								</div>
+								<div class="text_wrapper">
+									<p>
+										"I love coming to BlissBrew to work on my projects. The free Wi-Fi and comfortable seating make it the perfect place to be productive. Plus, their cold brew is absolutely fantastic-smooth and refreshing!"
+									</p>
+								</div>
+								<div class="client_info_wrapper">
+									<div class="avatar_wrapper">
+										<img
+											src="./asset/avatar.svg"
+											alt="avatar"
+											width="32"
+											height="32"
+											priority
+										/>
+									</div>
+									Mark R.
+								</div>
+							</div>
+                            <div class="feedback_wrapper">
+								<div class="star_wrapper">
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+									<img
+										src="./asset/star.svg"
+										alt="star"
+										width="32"
+										height="32"
+										priority
+									/>
+								</div>
+								<div class="text_wrapper">
+									<p>
+										"BlissBrew offers a wonderful selection of organic and locally sourced products. I appreciate their commitment to quality and sustainability. Their caramel macchiato is my absolute favorite!"
+									</p>
+								</div>
+								<div class="client_info_wrapper">
+									<div class="avatar_wrapper">
+										<img
+											src="./asset/avatar.svg"
+											alt="avatar"
+											width="32"
+											height="32"
+											priority
+										/>
+									</div>
+									Emily s.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <!-- Contact Section -->
+             <div
+                class="contact_section"
+                id="contact"
+            >
+                <div class="contact_wrapper">
+                    <div class="contact_info_wrapper">
+                        <h1 class="averia-serif-libre-bold">
+                            Contact Us
+                        </h1>
+                        <p>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>blissbrew@gmail.com</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>123 Sample St, Anytown, USA</span>
+                        </p>
+                    </div>
+                    <form
+                        action=""
+                        class="form"
+                    >
+                        <div class="form_wrapper">
+                            <div class="form_name">
+                                <label for="name-input">Name:</label>
+                                <input
+                                    type="text"
+                                    id="name-input"
+                                    name="name"
+                                    required
+                                />
+                            </div>
+                            <div class="form_email">
+                                <label for="email-input">Email:</label>
+                                <input
+                                    type="email"
+                                    id="email-input"
+                                    name="email"
+                                    required
+                                />
+                            </div>
+                            <div class="form_message">
+                                <label for="message">Message:</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    required
+                                ></textarea>
+                            </div>
+                            <div
+                                class="form_button"
+                                type="submit"
+                            >
+                                <button class="button">Submit &gt;</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+		</main>
+
+        <!-- Footer -->
+        <div class="footer_section">
+			<div class="upper_wrapper">
+				<div class="logo_wrapper theme">
+					<a
+                        href="/"
+                        class="white"
+                    >
+                        <p>BlissBrew</p>
+                    </a>
+				</div>
+				<div class="nav_wrapper">
+                    <nav class="footer-nav" aria-label="Footer Navigation">
+                        <ul>
+                            <li>
+                                <a
+                                    href="#home"
+                                    class="a"
+                                >
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#about"
+                                    class="a"
+                                >
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#menu"
+                                    class="a"
+                                >
+                                    <span>Menu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#contact"
+                                    class="a"
+                                >
+                                    <span>contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+				</div>
+				<div class="social_wrapper">
+					<i class="fa-brands fa-square-facebook"></i>
+					<i class="fa-brands fa-square-instagram"></i>
+					<i class="fa-brands fa-square-x-twitter"></i>
+					<i class="fa-brands fa-linkedin"></i>
+					<i class="fa-brands fa-square-youtube"></i>
+				</div>
+			</div>
+			<div class="lower_wrapper">
+				<p>&copy; 2024 BlisBrew. All Rights Reserved. Designed By Jasmyre.</p>
+			</div>
+		</div>
+	</body>
+</html>

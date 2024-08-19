@@ -5,13 +5,14 @@ import Button from "../button/Button";
 import PropTypes from "prop-types";
 
 const ProductSection = (props) => {
-	const products = props.products.map((info) => {
+	const products = props.products.map((info, i) => {
 		const name = info.name;
 		const price = info.price;
 		const src = info.src;
 		const description = info.description;
 		return (
 			<ProductCard
+			    key={i}
 				name={name}
 				price={price}
 				src={src}

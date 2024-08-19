@@ -18,11 +18,11 @@ const FooterSection = () => {
 					/>
 				</div>
 				<div className={styles.social_wrapper}>
-					<i class="fa-brands fa-square-facebook"></i>
-					<i class="fa-brands fa-square-instagram"></i>
-					<i class="fa-brands fa-square-x-twitter"></i>
-					<i class="fa-brands fa-linkedin"></i>
-					<i class="fa-brands fa-square-youtube"></i>
+					<i className="fa-brands fa-square-facebook"></i>
+					<i className="fa-brands fa-square-instagram"></i>
+					<i className="fa-brands fa-square-x-twitter"></i>
+					<i className="fa-brands fa-linkedin"></i>
+					<i className="fa-brands fa-square-youtube"></i>
 				</div>
 			</div>
 			<div className={styles.lower_wrapper}>
