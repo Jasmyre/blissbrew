@@ -12,7 +12,7 @@ const ProductSection = (props) => {
 		const description = info.description;
 		return (
 			<ProductCard
-			    key={i}
+			    key={i + info.price}
 				name={name}
 				price={price}
 				src={src}

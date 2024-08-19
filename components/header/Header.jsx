@@ -5,8 +5,6 @@ import Image from "next/image";
 import PropTypes from "prop-types";
 import Button from "../button/Button";
 
-import { Inter } from "next/font/google";
-
 const Header = (props) => {
 	const navigations = props.navigations.map((nav) => {
 		return (
