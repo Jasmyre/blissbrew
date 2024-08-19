@@ -57,7 +57,7 @@ const Home = () => {
 					{
 						name: "Pumpkin Spice Latte",
 						price: 3.75,
-						src: "/coffee/pumkpkin_spice_latte.png",
+						src: "/coffee/pumpkin_spice_latte.png",
 						description:
 							"A seasonal favorite with espresso, steamed milk, and pumpkin spice syrup, topped with whipped cream and cinnamon.",
 					},
